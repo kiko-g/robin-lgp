@@ -22,7 +22,7 @@
   height: 20px;
   bottom: -150px;
   animation: animate 20s linear infinite;
-  @apply bg-primary/20 dark:bg-white/20;
+  @apply bg-primary/30 dark:bg-white/20;
 }
 
 .circles li:nth-child(1) {
@@ -118,12 +118,7 @@
 
 /* Scrolling Background */
 .anim {
-  background: linear-gradient(
-    -45deg,
-    theme('colors.teal.400'),
-    theme('colors.blue.400'),
-    theme('colors.purple.400') 80%
-  );
+  background: linear-gradient(-45deg, theme('colors.teal.400'), theme('colors.blue.400'), theme('colors.purple.400') 80%);
   background-size: 400% 400%;
   animation: gradient 3s ease infinite;
 }

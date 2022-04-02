@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .layout {
-  @apply flex min-h-screen flex-col bg-lighter font-sans text-base font-medium text-dark opacity-[99%] dark:bg-darker dark:text-white;
+  @apply flex min-h-screen flex-col bg-gradient-to-r from-primary/20 via-secondary/20 to-tertiary/20
+  font-sans text-base font-medium text-dark antialiased opacity-[99%] dark:bg-darker dark:text-white;
 }
 
 .navbar {
