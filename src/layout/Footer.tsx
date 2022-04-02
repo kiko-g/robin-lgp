@@ -26,7 +26,9 @@ export const Footer: React.FC<Props> = ({ siteTitle }) => {
                 viewBox={social.viewBox ? social.viewBox : '0 0 24 24'}
                 aria-hidden="true"
               >
-                <path fillRule="evenodd" d={social.svg} clipRule="evenodd" />
+                {social.svg.map(d => (
+                  <path fillRule="evenodd" d={d} clipRule="evenodd" />
+                ))}
               </svg>
             </a>
           ))}

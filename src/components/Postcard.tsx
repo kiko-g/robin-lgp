@@ -7,7 +7,7 @@ export const Postcard = ({ post }) => {
   const difference = daysDifference(post.frontmatter.date)
   const coverImage = getImage(post.frontmatter.featuredImage)
 
-  return (
+  return difference > 0 ? (
     <Link
       to={post.frontmatter.slug}
       className="group max-w-7xl space-y-2 rounded-xl bg-lighter/80 p-4 shadow transition duration-300 hover:bg-lighter dark:bg-darker/50 dark:hover:bg-darker/75"
@@ -33,7 +33,7 @@ export const Postcard = ({ post }) => {
       <footer className="w-full space-y-0.5">
         <div className="flex items-start justify-start">
           <h3 className="flex-grow font-medium">{post.frontmatter.title}</h3>
-          {difference < 90 && difference > 0 ? (
+          {difference < 90 ? (
             <span className="inline-flex items-center justify-center rounded-full bg-rose-800/80 px-2 py-1 text-xs leading-none text-white">
               New
             </span>
@@ -45,5 +45,5 @@ export const Postcard = ({ post }) => {
         </p>
       </footer>
     </Link>
-  )
+  ) : null
 }
