@@ -35,7 +35,7 @@ const Hamburger = ({ open }) => (
       open ? 'absolute top-2 right-2 my-auto flex h-6 items-center justify-end space-x-2' : 'flex w-full items-center justify-between'
     }`}
   >
-    <a href="https://linktr.ee/kikogoncalves" target="_blank">
+    <a href="https://linktr.ee/robin.lgp" target="_blank">
       {open ? (
         <StaticImage className="avatar top-0.5 h-5 w-5" src="../images/gatsby-icon.png" alt="Francisco Gonçalves" />
       ) : (
@@ -54,7 +54,7 @@ const Hamburger = ({ open }) => (
           />
         ) : (
           <MenuIcon
-            className="ease dark:group-hover:text-/75 group-hover:text-dark1/75 block h-6 w-6 transition duration-200"
+            className="ease dark:group-hover:text-/75 block h-6 w-6 transition duration-200 group-hover:text-dark/75"
             aria-hidden="true"
           />
         )}
@@ -66,7 +66,7 @@ const Hamburger = ({ open }) => (
 const Header = ({ title, location }) => (
   <div className="header">
     <div className="relative hidden h-auto space-x-12 self-center duration-200 hover:opacity-75 md:inline-flex">
-      <a href="https://linktr.ee/kikogoncalves" target="_blank" className="flex items-center space-x-2">
+      <a href="https://linktr.ee/robin.lgp" target="_blank" className="flex items-center space-x-2">
         <StaticImage
           className="z-20 inline-flex h-6 w-6 rounded-full transition"
           src="../images/gatsby-icon.png"
@@ -79,13 +79,19 @@ const Header = ({ title, location }) => (
     <div className="hidden space-x-6 self-center md:inline-flex md:space-x-10">
       {navigation.map((link, index) => (
         <Link to={link.location} key={`nav-${index}`} className="relative py-1">
-          <button type="button" className={`flex h-12 items-center justify-center font-medium lowercase tracking-wider transition`}>
+          <button
+            type="button"
+            className={`flex h-12 items-center justify-center font-medium lowercase tracking-wider transition ${
+              location === link.title
+                ? 'text-primary hover:text-primary/75'
+                : 'text-dark/75 hover:text-dark dark:text-white/75 dark:hover:text-white'
+            }`}
+          >
             <span className="flex items-center justify-center">
               {link.icon}
               {link.title}
             </span>
           </button>
-          {location === link.title ? <span className="absolute bottom-0 h-1 w-full rounded-t-sm bg-primary" /> : null}
         </Link>
       ))}
     </div>
@@ -100,7 +106,14 @@ const Mobile = ({ location }) => (
   <Disclosure.Panel className="flex flex-col space-y-3 py-2 md:hidden">
     {navigation.map((link, index) => (
       <Link to={link.location} className="relative h-auto" key={`mobile-nav-${index}`}>
-        <button type="button" className={`flex h-auto items-center justify-center font-medium lowercase tracking-wider transition`}>
+        <button
+          type="button"
+          className={`flex h-auto items-center justify-center font-medium lowercase tracking-wider transition ${
+            location === link.title
+              ? 'text-primary hover:text-primary/75'
+              : 'text-dark/75 hover:text-dark dark:text-white/75 dark:hover:text-white'
+          }`}
+        >
           <span className="flex items-center justify-center">
             {link.icon}
             {link.title}

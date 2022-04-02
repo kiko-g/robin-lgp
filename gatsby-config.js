@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Robin`,
+    description: `Robin is a virtual assistant that aims to facilitate navigation and interaction with existing platforms`,
+    author: `@robin`,
+    siteUrl: `https://robinassistant.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
