@@ -18,6 +18,8 @@ export const Background: React.FC<Props> = () => {
           <li></li>
           <li></li>
           <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </div>
     </div>

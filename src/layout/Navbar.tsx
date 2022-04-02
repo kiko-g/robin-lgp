@@ -32,16 +32,18 @@ export const Navbar: React.FC<Props> = ({ siteTitle, location }) => {
 const Hamburger = ({ open }) => (
   <div
     className={`z-50 md:hidden ${
-      open ? 'absolute top-2 right-2 my-auto flex h-6 items-center justify-end space-x-2' : 'flex w-full items-center justify-between'
+      open
+        ? 'absolute top-2 right-2 my-auto flex h-6 items-center justify-end space-x-2'
+        : 'flex w-full items-center justify-between'
     }`}
   >
-    <a href="https://linktr.ee/robin.lgp" target="_blank">
+    <Link to="/">
       {open ? (
         <StaticImage className="avatar top-0.5 h-5 w-5" src="../images/gatsby-icon.png" alt="Francisco Gonçalves" />
       ) : (
         <StaticImage className="avatar h-6 w-6" src="../images/gatsby-icon.png" alt="Francisco Gonçalves" />
       )}
-    </a>
+    </Link>
 
     <div className="flex items-center space-x-1">
       <DarkModeSwitchMinimal />
@@ -66,14 +68,14 @@ const Hamburger = ({ open }) => (
 const Header = ({ title, location }) => (
   <div className="header">
     <div className="relative hidden h-auto space-x-12 self-center duration-200 hover:opacity-75 md:inline-flex">
-      <a href="https://linktr.ee/robin.lgp" target="_blank" className="flex items-center space-x-2">
+      <Link to="/" className="flex items-center space-x-2">
         <StaticImage
           className="z-20 inline-flex h-6 w-6 rounded-full transition"
           src="../images/gatsby-icon.png"
           alt="Francisco Gonçalves"
         />
         <h2 className="text-xs font-bold tracking-tighter duration-150 lg:text-base">{title}</h2>
-      </a>
+      </Link>
     </div>
 
     <div className="hidden space-x-6 self-center md:inline-flex md:space-x-10">

@@ -9,6 +9,8 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,8 +18,37 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/markdown/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        footnotes: true,
+        gfm: true,
+        plugins: [
+          {
+            resolve: `gatsby-remark-classes`,
+          },
+          {
+            resolve: `gatsby-remark-images`,
+          },
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: 'carbon',
+              theme: 'one-dark',
+              editable: false,
+              lineNumbers: false,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
