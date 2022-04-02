@@ -4,7 +4,7 @@
 
 .layout {
   @apply flex min-h-screen flex-col scroll-smooth 
-  bg-lighter bg-gradient-to-br from-primary/20 via-secondary/20 to-tertiary/25 font-sans 
+  bg-lighter bg-gradient-to-br from-primary/[15%] via-secondary/[15%] to-tertiary/20 font-sans 
   text-base font-medium text-dark antialiased opacity-[99%] 
   dark:bg-darkest dark:from-primary/10 dark:via-secondary/10 dark:to-tertiary/10 dark:text-white;
 }

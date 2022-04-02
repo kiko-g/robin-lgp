@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .blogpost {
-  @apply mb-5 flex max-w-full flex-col justify-between p-4 px-4 font-normal md:min-w-[55vw] md:max-w-[65vw] md:px-0;
+  @apply mx-auto mb-5 flex w-full flex-col justify-between p-4 px-4 font-normal md:min-w-[55vw] md:max-w-[65vw] md:px-0;
 }
 
 .blogpost header {
