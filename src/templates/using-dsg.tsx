@@ -1,12 +1,11 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import { Layout } from '../layout/Layout'
+// import Seo from '../components/Seo'
 
 const UsingDSG = () => (
-  <Layout>
-    <Seo title="Using DSG" />
+  <Layout location="UsingDSG">
+    {/* <Seo title="Using DSG" /> */}
     <h1>Hello from a DSG Page</h1>
     <p>This page is not created until requested by a user.</p>
     <p>
