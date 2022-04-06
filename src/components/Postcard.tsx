@@ -10,7 +10,8 @@ export const Postcard = ({ post }) => {
   return difference > 0 ? (
     <Link
       to={post.frontmatter.slug}
-      className="group max-w-7xl space-y-2 rounded-xl bg-lighter/80 p-4 shadow transition duration-300 hover:bg-lighter dark:bg-darker/50 dark:hover:bg-darker/75"
+      className="group max-w-7xl space-y-2 rounded-xl bg-lightest p-4 shadow transition duration-300 
+      hover:bg-primary/10 dark:bg-dark dark:hover:bg-primary/25"
     >
       <div className="relative flex items-center justify-center rounded-lg bg-opacity-90">
         <GatsbyImage image={coverImage} alt="cover" className="h-48 w-full rounded-lg object-contain shadow" />
@@ -40,9 +41,7 @@ export const Postcard = ({ post }) => {
           ) : null}
         </div>
 
-        <p className="text-sm font-normal text-gray-400 transition group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-200">
-          {post.excerpt}
-        </p>
+        <p className="text-sm font-normal text-gray-500 transition dark:text-gray-400">{post.excerpt}</p>
       </footer>
     </Link>
   ) : null
