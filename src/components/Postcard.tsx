@@ -11,7 +11,7 @@ export const Postcard = ({ post }) => {
     <Link
       to={post.frontmatter.slug}
       className="group max-w-7xl space-y-2 rounded-xl bg-lightest p-4 shadow transition duration-300 
-      hover:bg-primary/10 dark:bg-dark dark:hover:bg-primary/25"
+      hover:bg-gray-100 dark:bg-darker dark:hover:bg-dark"
     >
       <div className="relative flex items-center justify-center rounded-lg bg-opacity-90">
         <GatsbyImage image={coverImage} alt="cover" className="h-48 w-full rounded-lg object-contain shadow" />
@@ -26,7 +26,7 @@ export const Postcard = ({ post }) => {
             </svg>
           </span>
         ) : null}
-        <span className="invisible absolute bottom-2 left-2 rounded-full bg-gray-800/80 p-1 text-xs leading-none tracking-tighter text-white group-hover:visible">
+        <span className="invisible absolute bottom-2 left-2 rounded-full bg-gray-500 py-1 px-2 text-xs leading-none tracking-tighter text-white group-hover:visible">
           {post.frontmatter.date}
         </span>
       </div>

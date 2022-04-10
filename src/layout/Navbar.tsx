@@ -85,8 +85,8 @@ const Header = ({ title, location }) => (
             type="button"
             className={`flex h-12 items-center justify-center font-medium lowercase tracking-wider transition ${
               location === link.title
-                ? 'text-primary hover:text-primary/75'
-                : 'text-dark/75 hover:text-dark dark:text-white/75 dark:hover:text-white'
+                ? 'text-dark dark:text-white'
+                : 'text-dark/50 hover:text-dark dark:text-white/50 dark:hover:text-white'
             }`}
           >
             <span className="flex items-center justify-center">
@@ -112,8 +112,8 @@ const Mobile = ({ location }) => (
           type="button"
           className={`flex h-auto items-center justify-center font-medium lowercase tracking-wider transition ${
             location === link.title
-              ? 'text-primary hover:text-primary/75'
-              : 'text-dark/75 hover:text-dark dark:text-white/75 dark:hover:text-white'
+              ? 'text-dark dark:text-white'
+              : 'text-dark/50 hover:text-dark dark:text-white/50 dark:hover:text-white'
           }`}
         >
           <span className="flex items-center justify-center">

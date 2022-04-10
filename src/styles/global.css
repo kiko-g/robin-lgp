@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .layout {
-  @apply scroller flex min-h-screen flex-col scroll-smooth bg-light font-prose font-medium text-dark opacity-[99%] dark:bg-darkest dark:text-white;
+  @apply flex min-h-screen flex-col scroll-smooth bg-light font-prose font-medium text-dark opacity-[99%] dark:bg-darkest dark:text-white;
 }
 
 .background {
-  @apply bg-gradient-to-br from-primary/20 via-secondary/20 to-tertiary/20 dark:from-primary/20 dark:via-secondary/20 dark:to-tertiary/20;
+  @apply bg-gradient-to-br from-primary/20 via-primary/20 to-primary/20 antialiased dark:from-tertiary/10 dark:via-tertiary/10 dark:to-tertiary/10;
 }
 
 .navbar {
@@ -24,21 +24,4 @@
 
 .avatar {
   @apply rounded-full transition hover:opacity-80 md:hidden;
-}
-
-.scroller {
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
