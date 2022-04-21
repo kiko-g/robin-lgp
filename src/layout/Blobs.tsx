@@ -5,8 +5,8 @@ type Props = {}
 export const Blobs = ({}: Props) => {
   return (
     <div className="relative mx-auto w-full max-w-lg">
-      <div className="animate-blob absolute top-0 -left-4 h-72 w-72 rounded-full bg-primary opacity-70 mix-blend-multiply blur-xl filter"></div>
-      <div className="animate-blob animation-delay-4000 absolute -bottom-16 left-20 h-72 w-72 rounded-full bg-secondary opacity-70 mix-blend-multiply blur-xl filter"></div>
+      <div className="animate-blob absolute -top-4 -left-8 h-72 w-72 rounded-full bg-primary opacity-70 mix-blend-multiply blur-xl filter"></div>
+      <div className="animate-blob animation-delay-4000 absolute -bottom-20 left-20 h-72 w-72 rounded-full bg-secondary opacity-70 mix-blend-multiply blur-xl filter"></div>
       <div className="animate-blob animation-delay-2000 absolute top-0 -right-4 h-72 w-72 rounded-full bg-third opacity-70 mix-blend-multiply blur-xl filter"></div>
       <div className="relative m-8 space-y-4">
         <div className="flex items-center justify-between space-x-8 rounded-lg bg-white p-5">

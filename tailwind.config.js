@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#2978a0', //tbd
-        secondary: '#4ecca3', // tbd
+        primary: '#CC4E4E', //tbd
+        secondary: '#5B165C', // tbd
         third: '#ffec00', // yellow
         fourth: '#18222e', // dark background (blueish)
         fifth: '#eeeeee', // light background (whiteish)
@@ -26,7 +26,7 @@ module.exports = {
       },
       fontFamily: {
         prose: ['Inter', ...defaultTheme.fontFamily.sans],
-        headings: ['Inter', ...defaultTheme.fontFamily.sans],
+        headings: ['Rubik', ...defaultTheme.fontFamily.sans],
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
         code: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
         mono: ['Fira Code', ...defaultTheme.fontFamily.mono],

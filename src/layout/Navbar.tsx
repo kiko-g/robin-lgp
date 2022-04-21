@@ -42,9 +42,9 @@ const Hamburger = ({ open }) => (
   >
     <Link to="/">
       {open ? (
-        <StaticImage className="avatar top-0.5 h-5 w-5 bg-darkest dark:bg-darkest" src={icon} alt="Robin" />
+        <StaticImage className="avatar gradient top-0.5 h-5 w-5 dark:bg-black" src={icon} alt="Robin" />
       ) : (
-        <StaticImage className="avatar h-6 w-6 bg-darkest dark:bg-darkest" src={icon} alt="Robin" />
+        <StaticImage className="avatar gradient h-6 w-6 dark:bg-black" src={icon} alt="Robin" />
       )}
     </Link>
 
@@ -75,7 +75,7 @@ const Header = ({ title, location }) => (
         <StaticImage
           alt="Robin"
           src={icon}
-          className="z-20 inline-flex h-6 w-6 rounded-full bg-darkest transition dark:bg-darkest"
+          className="gradient z-20 inline-flex h-6 w-6 rounded-full transition dark:bg-darkest"
         />
         <h2 className="text-xs font-bold tracking-tighter duration-150 lg:text-base">{title}</h2>
       </Link>
