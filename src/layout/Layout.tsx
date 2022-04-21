@@ -25,7 +25,7 @@ export const Layout: React.FC<Props> = ({ children, location, background }) => {
     <div className="layout background">
       <Navbar siteTitle={data.site.siteMetadata?.title} location={location} />
       {background ? <Background /> : null}
-      <div className={`container z-10 mx-auto flex ${background ? `my-auto` : `mb-auto`}`}>{children}</div>
+      <div className={`container z-10 mx-auto flex ${background ? `my-auto` : `my-auto`}`}>{children}</div>
       <Footer siteTitle={data.site.siteMetadata?.title} />
     </div>
   )
