@@ -3,15 +3,11 @@
 @tailwind utilities;
 
 .layout {
-  @apply flex min-h-screen flex-col scroll-smooth bg-light font-prose font-medium text-dark opacity-[99%] dark:bg-darkest dark:text-white;
-}
-
-.background {
-  @apply bg-gradient-to-br from-primary/20 via-primary/20 to-primary/20 antialiased dark:from-tertiary/10 dark:via-tertiary/10 dark:to-tertiary/10;
+  @apply flex min-h-screen flex-col scroll-smooth bg-fifth font-prose font-medium text-dark opacity-[99%] dark:bg-fourth dark:text-white;
 }
 
 .navbar {
-  @apply sticky top-0 z-20 space-x-4 px-3 py-4 text-dark opacity-80 dark:text-white md:py-0 md:px-3;
+  @apply sticky top-0 z-20 space-x-4 bg-fifth/80 px-3 py-4 text-dark dark:bg-fourth/80 dark:text-white md:py-0 md:px-3;
 }
 
 .hamburger {
@@ -23,5 +19,5 @@
 }
 
 .avatar {
-  @apply rounded-full transition hover:opacity-80 md:hidden;
+  @apply rounded-full transition hover:opacity-90 md:hidden;
 }

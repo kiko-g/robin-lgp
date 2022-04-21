@@ -1,6 +1,5 @@
 import React from 'react'
-import { socials } from '../utils'
-
+import { socials } from '../utils/data'
 type Props = {
   siteTitle: string
 }
@@ -26,8 +25,8 @@ export const Footer: React.FC<Props> = ({ siteTitle }) => {
                 viewBox={social.viewBox ? social.viewBox : '0 0 24 24'}
                 aria-hidden="true"
               >
-                {social.svg.map(d => (
-                  <path fillRule="evenodd" d={d} clipRule="evenodd" />
+                {social.svg.map((d, dIdx) => (
+                  <path fillRule="evenodd" d={d} clipRule="evenodd" key={`social-${socialIdx}-svg-${dIdx}`} />
                 ))}
               </svg>
             </a>

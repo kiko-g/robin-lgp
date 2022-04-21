@@ -6,17 +6,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#a5b4fc',
-        secondary: '#818cf8',
-        tertiary: '#6366f1',
-        fourth: '#c7d2fe',
+        primary: '#2978a0', //tbd
+        secondary: '#4ecca3', // tbd
+        third: '#ffec00', // yellow
+        fourth: '#18222e', // dark background (blueish)
+        fifth: '#eeeeee', // light background (whiteish)
         dark: '#242731',
         darker: '#1e2028',
         darkest: '#1a1c23',
         light: '#f2f4f7',
         lighter: '#f7f7f7',
         lightest: '#fcfcfc',
-        navydark: '#1a202c',
       },
       maxWidth: {
         screen: '100vw',

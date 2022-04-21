@@ -4,12 +4,15 @@ import { Disclosure } from '@headlessui/react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { DarkModeSwitchMinimal } from './DarkModeSwitchMinimal'
-import { navigation } from '../utils'
+import { navigation } from '../utils/data'
 
 type Props = {
   siteTitle: string
   location: string
 }
+
+const logo = '../images/logo.png'
+const icon = '../images/icon.png'
 
 export const Navbar: React.FC<Props> = ({ siteTitle, location }) => {
   return (
@@ -39,9 +42,9 @@ const Hamburger = ({ open }) => (
   >
     <Link to="/">
       {open ? (
-        <StaticImage className="avatar top-0.5 h-5 w-5" src="../images/gatsby-icon.png" alt="Francisco Gonçalves" />
+        <StaticImage className="avatar top-0.5 h-5 w-5 bg-darkest dark:bg-darkest" src={icon} alt="Robin" />
       ) : (
-        <StaticImage className="avatar h-6 w-6" src="../images/gatsby-icon.png" alt="Francisco Gonçalves" />
+        <StaticImage className="avatar h-6 w-6 bg-darkest dark:bg-darkest" src={icon} alt="Robin" />
       )}
     </Link>
 
@@ -70,9 +73,9 @@ const Header = ({ title, location }) => (
     <div className="relative hidden h-auto space-x-12 self-center duration-200 hover:opacity-75 md:inline-flex">
       <Link to="/" className="flex items-center space-x-2">
         <StaticImage
-          className="z-20 inline-flex h-6 w-6 rounded-full transition"
-          src="../images/gatsby-icon.png"
-          alt="Francisco Gonçalves"
+          alt="Robin"
+          src={icon}
+          className="z-20 inline-flex h-6 w-6 rounded-full bg-darkest transition dark:bg-darkest"
         />
         <h2 className="text-xs font-bold tracking-tighter duration-150 lg:text-base">{title}</h2>
       </Link>

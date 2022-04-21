@@ -1,19 +1,7 @@
 import React from 'react'
 import { FingerPrintIcon, NewspaperIcon, AnnotationIcon, PhoneOutgoingIcon, HomeIcon } from '@heroicons/react/outline'
 
-export const classNames = (...classes: any[]) => {
-  return classes.filter(Boolean).join(' ')
-}
-
-export const daysDifference = (dateString: string) => {
-  let now = new Date()
-  let date = new Date(dateString)
-  let difference = (now.getTime() - date.getTime()) / (1000 * 3600 * 24)
-
-  return difference
-}
-
-export const navigation = [
+const navigation = [
   { title: 'Home', location: '/', icon: <HomeIcon className="mr-1.5 h-4 w-4" /> },
   { title: 'About', location: '/about', icon: <FingerPrintIcon className="mr-1.5 mt-0.5 h-4 w-4" /> },
   { title: 'Blog', location: '/blog', icon: <NewspaperIcon className="mr-1.5 h-4 w-4" /> },
@@ -21,7 +9,7 @@ export const navigation = [
   { title: 'Contacts', location: '/contacts', icon: <PhoneOutgoingIcon className="mr-1.5 mt-0.5 h-4 w-4" /> },
 ]
 
-export const socials = [
+const socials = [
   {
     shown: true,
     label: 'instagram',
@@ -58,6 +46,4 @@ export const socials = [
   },
 ]
 
-export const links = {
-  meic: 'https://sigarra.up.pt/feup/en/CUR_GERAL.CUR_PLANOS_ESTUDOS_VIEW?pv_plano_id=31204&pv_ano_lectivo=2021',
-}
+export { navigation, socials }
