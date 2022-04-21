@@ -11,26 +11,26 @@ export const Blobs = ({}: Props) => {
       <div className="relative m-8 space-y-4">
         <div className="flex items-center justify-between space-x-8 rounded-lg bg-white p-5">
           <div className="flex-1">
-            <div className="h-4 w-48 rounded bg-gray-300"></div>
+            <div className="h-4 w-36 rounded bg-gray-300 md:w-48"></div>
           </div>
           <div>
-            <div className="h-6 w-24 rounded-lg bg-primary"></div>
+            <div className="h-6 w-12 rounded-lg bg-primary md:w-24"></div>
           </div>
         </div>
         <div className="flex items-center justify-between space-x-8 rounded-lg bg-white p-5">
           <div className="flex-1">
-            <div className="h-4 w-44 rounded bg-gray-300"></div>
+            <div className="h-4 w-24 rounded bg-gray-300 md:w-44"></div>
           </div>
           <div>
-            <div className="h-6 w-28 rounded-lg bg-secondary"></div>
+            <div className="h-6 w-14 rounded-lg bg-secondary md:w-28"></div>
           </div>
         </div>
         <div className="flex items-center justify-between space-x-8 rounded-lg bg-white p-5">
           <div className="flex-1">
-            <div className="h-4 w-56 rounded bg-gray-300"></div>
+            <div className="h-4 w-32 rounded bg-gray-300 md:w-56"></div>
           </div>
           <div>
-            <div className="h-6 w-20 rounded-lg bg-third"></div>
+            <div className="h-6 w-16 rounded-lg bg-third md:w-20"></div>
           </div>
         </div>
       </div>
