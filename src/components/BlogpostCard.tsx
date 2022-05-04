@@ -7,29 +7,27 @@ export const BlogpostCard = ({ post }) => {
   const difference = daysDifference(post.frontmatter.date)
   const coverImage = getImage(post.frontmatter.featuredImage)
 
-  return (
+  return difference >= 0 ? (
     <Link to={post.frontmatter.slug} className="blogpost-card group">
-      <section>
-        <GatsbyImage image={coverImage} alt="cover" className="h-56 w-full rounded-lg object-contain shadow" />
-
+      <header>
+        <GatsbyImage image={coverImage} alt="cover" className="h-48 w-full rounded-lg object-contain" />
         {post.frontmatter.pinned ? (
           <span className="pinned">
             <PinIcon />
           </span>
         ) : null}
-
-        <span className="date group-hover:visible">{post.frontmatter.date}</span>
-      </section>
+        <span className="date">{post.frontmatter.date}</span>
+      </header>
 
       <footer>
         <div className="header">
           <h3 className="title">{post.frontmatter.title}</h3>
-          {difference < 31 && difference > 0 ? <span className="new">New</span> : null}
+          {difference < 60 ? <span className="new">New</span> : null}
         </div>
-        <p className="excerpt group-hover:text-gray-500 dark:group-hover:text-gray-200">{post.excerpt}</p>
+        <p className="excerpt pb-0">{post.excerpt}</p>
       </footer>
     </Link>
-  )
+  ) : null
 }
 
 const PinIcon = () => (

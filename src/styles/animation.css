@@ -33,11 +33,11 @@
 }
 
 .background-circles li:nth-child(3n) {
-  @apply bg-third/50 dark:bg-white/10;
+  @apply bg-tertiary/50 dark:bg-white/10;
 }
 
 .background-circles li:nth-child(4n) {
-  @apply bg-fourth/50 dark:bg-white/10;
+  @apply bg-navy/50 dark:bg-white/10;
 }
 
 .background-circles li:nth-child(1) {

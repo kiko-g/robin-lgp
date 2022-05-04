@@ -1,6 +1,6 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import Seo from '../components/Seo'
+import { graphql } from 'gatsby'
 import { Layout } from '../layout/Layout'
 import { BlogpostCard } from '../components/BlogpostCard'
 import '../styles/blog.css'
@@ -8,7 +8,7 @@ import '../styles/blog.css'
 // prettier-ignore
 const BlogPage = ({ data: { allMarkdownRemark: { edges }, }, }) => {
   return (
-    <Layout location="Blog">
+    <Layout location="Blog" liquid>
       <Seo title="Blog" />
       <main className="blog">
         <header>
@@ -36,13 +36,16 @@ export default BlogPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: [DESC, DESC], fields: [frontmatter___pinned, frontmatter___date] }) {
+    allMarkdownRemark(
+      sort: { order: [DESC, DESC], fields: [frontmatter___pinned, frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/(blog)/" } }
+    ) {
       edges {
         node {
           id
-          excerpt(pruneLength: 100)
+          excerpt(pruneLength: 80)
           frontmatter {
-            date(formatString: "DD MMM, YYYY")
+            date(formatString: "DD MMMM, YYYY")
             slug
             title
             pinned

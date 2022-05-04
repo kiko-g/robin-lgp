@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#CC4E4E', //tbd
-        secondary: '#5B165C', // tbd
-        third: '#ffec00', // yellow
-        fourth: '#18222e', // dark background (blueish)
-        fifth: '#eeeeee', // light background (whiteish)
+        primary: '#cc4e4e', //brick red
+        secondary: '#7c1954', // deep purple (#5b165c or wine #7c1954?)
+        tertiary: '#ffec00', // bright yellow
+        navy: '#18222e', // dark background (blueish)
+        ice: '#eeeeee', // light background (whiteish)
         dark: '#242731',
         darker: '#1e2028',
         darkest: '#1a1c23',
@@ -20,6 +20,8 @@ module.exports = {
       },
       maxWidth: {
         screen: '100vw',
+        '8xl': '88rem',
+        '9xl': '96rem',
       },
       fontSize: {
         xxs: '0.6rem',

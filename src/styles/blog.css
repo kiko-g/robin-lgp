@@ -1,6 +1,6 @@
-/* Blogpage */
+/* @@@ Blogpage */
 .blog {
-  @apply container mx-auto max-w-7xl flex-1 flex-col justify-between space-y-6 px-4 py-4 xl:px-4 2xl:px-0;
+  @apply container mx-auto flex-1 flex-col justify-between space-y-6 px-4 py-4 xl:px-4 2xl:px-0;
 }
 
 .blog header > h2 {
@@ -12,29 +12,31 @@
 }
 
 .blog article {
-  @apply grid grid-flow-row grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4;
+  @apply grid grid-flow-row grid-cols-1 gap-x-5 gap-y-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5;
 }
 
-/* Card */
+/* @@@ Card */
 .blogpost-card {
-  @apply max-w-7xl space-y-2 rounded-xl bg-lightest p-4 shadow transition duration-300
-    hover:bg-primary/10 hover:text-gray-800 dark:bg-dark hover:dark:bg-primary/50 dark:hover:text-white;
+  @apply relative space-y-2 rounded-xl bg-lightest p-4 shadow transition duration-300
+    hover:bg-primary/10 hover:text-gray-800 dark:bg-light/5 hover:dark:bg-primary/50 dark:hover:text-white;
 }
 
-.blogpost-card section {
+.blogpost-card header {
   @apply relative flex items-center justify-center rounded-lg bg-opacity-90;
 }
 
-.blogpost-card section .pinned {
-  @apply absolute top-2 left-2 rounded-full bg-secondary p-1 text-xs leading-none text-white;
+.blogpost-card header .pinned {
+  @apply absolute top-2 left-2 rounded-full bg-gradient-to-br from-primary to-secondary
+   p-1 text-xs leading-none text-white shadow;
 }
 
-.blogpost-card section .date {
-  @apply invisible absolute bottom-2 left-2 rounded-full bg-gray-800/80 p-1 text-xs leading-none tracking-tighter text-white;
+.blogpost-card header .date {
+  @apply absolute top-2 right-2 rounded-full bg-navy/50 px-2 py-1 text-xs 
+  leading-none tracking-tight text-white dark:bg-ice/80 dark:text-gray-800;
 }
 
 .blogpost-card footer {
-  @apply w-full space-y-0.5;
+  @apply w-full space-y-1;
 }
 
 .blogpost-card footer .header {
@@ -50,12 +52,20 @@
 }
 
 .blogpost-card footer .excerpt {
-  @apply text-sm font-normal text-gray-400 transition dark:text-gray-400;
+  @apply text-sm font-normal tracking-tight text-gray-500 transition dark:text-gray-300;
 }
 
-/* Post page */
+.blogpost-card footer .date {
+  @apply absolute bottom-3 right-4 text-sm font-normal text-gray-400 transition dark:text-gray-500;
+}
+
+/* @@@ Post page */
 main.blogpost {
-  @apply mx-auto flex w-full flex-col justify-between px-4 pb-28 font-normal sm:mt-16 sm:px-6 md:px-8 xl:max-w-6xl xl:px-12;
+  @apply mx-auto flex w-full flex-col justify-between p-4 px-4 pb-28 font-normal sm:mt-16 sm:px-6 md:px-8 xl:max-w-6xl xl:px-12;
+}
+
+.blogpost article a {
+  @apply font-semibold text-blue-500 transition hover:underline hover:opacity-90 dark:text-blue-500;
 }
 
 .blogpost header {
@@ -63,11 +73,19 @@ main.blogpost {
 }
 
 .blogpost header h1 {
-  @apply text-3xl font-extrabold tracking-tight sm:text-center sm:text-4xl xl:mb-16;
+  @apply text-3xl font-extrabold tracking-tight text-primary dark:text-white sm:text-center sm:text-4xl xl:mb-16;
 }
 
 .blogpost header > div {
-  @apply flex items-center justify-center;
+  @apply flex items-center justify-between;
+}
+
+.blogpost header span.date {
+  @apply flex text-sm font-semibold text-secondary dark:text-white;
+}
+
+.blogpost header .go-back-button {
+  @apply flex rounded-full text-sm font-semibold text-secondary transition hover:opacity-75 dark:text-white;
 }
 
 .blogpost article {
@@ -80,6 +98,14 @@ main.blogpost {
 
 .blogpost footer > span {
   @apply text-gray-400 dark:text-gray-500 sm:text-center;
+}
+
+.blogpost img {
+  @apply w-full rounded-xl border-0 bg-transparent shadow;
+}
+
+.blogpost .gatsby-resp-image-wrapper {
+  margin: 2rem 0 !important;
 }
 
 .blogpost p {
@@ -120,13 +146,16 @@ main.blogpost {
 }
 
 .blogpost blockquote {
-  @apply my-8 border-yellow-700 md:mx-12;
+  @apply my-8 border-primary md:mx-12;
 }
 
-.blogpost pre {
-  @apply font-code;
+deckgo-highlight-code {
+  --deckgo-highlight-code-font-size: 0.65rem;
+  --deckgo-highlight-code-font-family: 'JetBrains Mono';
 }
 
-.blogpost code {
-  @apply p-2 font-code text-xs;
+@media (min-width: 768px) {
+  deckgo-highlight-code {
+    --deckgo-highlight-code-font-size: 0.8rem;
+  }
 }

@@ -11,10 +11,14 @@ export default function Template({ data }) {
   deckDeckGoHighlightElement()
 
   return (
-    <Layout location="Blogpost">
+    <Layout location="Blogpost" liquid>
       <main className="blogpost">
         <header>
           <h1>{frontmatter.title}</h1>
+          <div>
+            <GoBack />
+            <span className="date">{frontmatter.date}</span>
+          </div>
         </header>
 
         <article dangerouslySetInnerHTML={{ __html: html }} />
@@ -47,3 +51,19 @@ export const pageQuery = graphql`
     }
   }
 `
+
+const GoBack = () => (
+  <a className="go-back-button" href="/blog">
+    <svg viewBox="0 -7 3 24" className="mr-2.5 h-6 w-auto overflow-visible">
+      <path
+        d="M3 0L0 3L3 6"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></path>
+    </svg>
+    Go back
+  </a>
+)

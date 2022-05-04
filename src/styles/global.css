@@ -1,21 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800;900&family=Inter&display=swap');
 
-.layout {
-  @apply flex min-h-screen flex-col scroll-smooth bg-fifth font-prose font-medium text-dark opacity-[99%] dark:bg-fourth dark:text-white;
+html {
+  @apply scroll-smooth;
+}
+
+code {
+  @apply rounded-md px-1 font-code text-pink-600;
 }
 
 .gradient {
   background: linear-gradient(to bottom, theme('colors.primary') 0%, theme('colors.secondary') 100%);
 }
 
+.link {
+  @apply font-semibold text-blue-500 transition hover:underline hover:opacity-90 dark:text-blue-500;
+}
+
+.min-h-adjusted {
+  min-height: calc(100vh - 3.5rem);
+}
+
+/* Layout */
+.layout {
+  @apply flex min-h-screen flex-col overflow-hidden bg-light font-prose font-medium text-gray-800 opacity-[99%] dark:bg-navy dark:text-white;
+}
+
+.content {
+  @apply container z-10 mx-auto my-auto max-w-7xl;
+}
+
+.content-liquid {
+  @apply container z-10 mx-auto my-auto max-w-8xl;
+}
+
+/* Navbar */
 .navbar {
-  @apply sticky top-0 z-20 space-x-4 bg-fifth/80 px-3 py-4 text-dark dark:bg-fourth/80 dark:text-white md:py-0 md:px-3;
+  @apply sticky top-0 z-20 space-x-4 bg-light px-3 py-2 text-gray-800 dark:bg-navy dark:text-white md:py-0 md:px-3;
 }
 
 .hamburger {
-  @apply text-dark transition duration-200 ease-in dark:text-white md:hidden;
+  @apply text-gray-800 transition duration-200 ease-in dark:text-white md:hidden;
 }
 
 .header {
@@ -23,5 +51,5 @@
 }
 
 .avatar {
-  @apply rounded-full transition hover:opacity-90 md:hidden;
+  @apply rounded-full transition hover:opacity-80 md:hidden;
 }
