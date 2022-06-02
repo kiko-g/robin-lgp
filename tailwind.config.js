@@ -10,7 +10,7 @@ module.exports = {
         secondary: '#7c1954', // deep purple (#5b165c or wine #7c1954?)
         tertiary: '#ffec00', // bright yellow
         navy: '#18222e', // dark background (blueish)
-        ice: '#eeeeee', // light background (whiteish)
+        ice: '#eaeaf4', // light background (whiteish)
         dark: '#242731',
         darker: '#1e2028',
         darkest: '#1a1c23',
