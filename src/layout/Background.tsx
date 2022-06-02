@@ -1,5 +1,5 @@
 import * as React from 'react'
-import '../styles/animation.css'
+import '../styles/particles.css'
 
 type Props = {
   globs?: boolean

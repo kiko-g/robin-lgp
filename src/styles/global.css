@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800;900&family=Inter&display=swap');
 
+/* General */
 html {
   @apply scroll-smooth;
 }
@@ -14,10 +15,6 @@ code {
 
 .link {
   @apply font-semibold text-blue-500 transition hover:underline hover:opacity-90 dark:text-blue-500;
-}
-
-.min-h-adjusted {
-  min-height: calc(100vh - 3.5rem);
 }
 
 .divider {
@@ -31,7 +28,7 @@ code {
 
 /* Navbar */
 .navbar {
-  @apply z-20 w-full space-x-4 bg-ice/0 px-3 py-2 text-gray-800 dark:bg-navy/0 dark:text-white md:py-0 md:px-3;
+  @apply z-20 w-full space-x-4 px-3 py-2 text-gray-800 dark:text-white md:py-0 md:px-3;
 }
 
 .hamburger {
@@ -44,4 +41,76 @@ code {
 
 .avatar {
   @apply rounded-full transition hover:opacity-80 md:hidden;
+}
+
+.min-h-adjusted {
+  min-height: calc(100vh - 3.5rem);
+}
+
+/* Gradient */
+.robin-gradient {
+  background: linear-gradient(to bottom right, theme('colors.primary'), theme('colors.secondary'));
+}
+
+.gradient {
+  background: linear-gradient(180deg, theme('colors.primary'), theme('colors.rose.900'), theme('colors.secondary'));
+}
+
+.flow {
+  animation: gradient 20s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@-moz-keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
