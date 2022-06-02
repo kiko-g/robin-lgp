@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import Hero from './Hero'
 import Team from './Team'
 import CardFeature from './CardFeature'

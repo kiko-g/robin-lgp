@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { FingerPrintIcon, NewspaperIcon, AnnotationIcon, PhoneOutgoingIcon, HomeIcon } from '@heroicons/react/outline'
 
 const navigation = [

@@ -1,10 +1,10 @@
-import React from 'react'
+import * as React from 'react'
 import { Link } from 'gatsby'
 
 export default function SeeMore() {
   return (
     <Link
-      className="group relative inline-flex items-center overflow-hidden rounded robin-gradient
+      className="robin-gradient group relative inline-flex items-center overflow-hidden rounded
       px-8 py-3 text-white focus:outline-none focus:ring"
       to="/about"
     >
@@ -19,8 +19,7 @@ export default function SeeMore() {
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
         </svg>
       </span>
-
-      <span className="text-sm font-medium transition-all group-hover:mr-4">Download</span>
+      <span className="text-sm font-medium transition-all group-hover:mr-4">See more </span>
     </Link>
   )
 }
