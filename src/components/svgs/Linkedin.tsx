@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 const LinkedinIcon = (props: any) => (
-  <svg fill="currentColor" aria-hidden="true" viewBox="0 0 512 512" {...props}>
+  <svg fill="currentColor" aria-hidden="true" viewBox="-30 0 512 512" {...props}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"

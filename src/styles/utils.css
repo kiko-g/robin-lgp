@@ -1,0 +1,9 @@
+.github {
+  @apply rounded-full hover:bg-transparent text-[#333] transition hover:opacity-80 
+  dark:hover:bg-white dark:hover:text-[#333] dark:text-white;
+}
+
+.linkedin {
+  @apply rounded hover:bg-transparent text-[#0a66c2] p-[1px] transition hover:opacity-80 
+  dark:hover:bg-white dark:hover:text-[#0a66c2] dark:text-white;
+}

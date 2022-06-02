@@ -9,8 +9,8 @@ const IndexPage = () => {
     <Layout location="Home" background={true}>
       <Seo title="Home" />
       <Hero />
-      <div className="py-24 px-8 xl:px-0">
-        <h1 className="mb-4 text-4xl font-semibold font-headings">Meet our team</h1>
+      <div className="py-16 xl:py-24 px-4 xl:px-24">
+        <h1 className="mb-4 font-headings text-4xl font-semibold">Meet our team</h1>
         <Team />
       </div>
     </Layout>

@@ -7,14 +7,14 @@ import { DarkModeSwitchMinimal } from './DarkModeSwitchMinimal'
 import { navigation } from '../utils/data'
 
 type Props = {
-  siteTitle: string
+  title: string
   location: string
+  hasBackground?: boolean
 }
 
-const logo = '../images/logo.png'
 const icon = '../images/icon.png'
 
-export const Navbar: React.FC<Props> = ({ siteTitle, location }) => {
+export const Navbar = ({ title, location, hasBackground }: Props) => {
   return (
     <Disclosure as="nav" className="navbar">
       {({ open }) => {
@@ -22,7 +22,7 @@ export const Navbar: React.FC<Props> = ({ siteTitle, location }) => {
           <>
             <div className="relative flex items-center justify-between">
               <Hamburger open={open} />
-              <Header title={siteTitle} location={location} />
+              <Header title={title} location={location} hasBackground={hasBackground} />
             </div>
             <Mobile location={location} />
           </>
@@ -59,7 +59,7 @@ const Hamburger = ({ open }) => (
           />
         ) : (
           <MenuIcon
-            className="ease dark:group-hover:text-/75 block h-6 w-6 transition duration-200 group-hover:text-dark/75"
+            className="ease block h-6 w-6 transition duration-200 group-hover:text-dark/75 dark:group-hover:text-white/75"
             aria-hidden="true"
           />
         )}
@@ -68,7 +68,7 @@ const Hamburger = ({ open }) => (
   </div>
 )
 
-const Header = ({ title, location }) => (
+const Header = ({ title, location, hasBackground }: Props) => (
   <div className="header">
     <div className="relative hidden h-auto space-x-12 self-center duration-200 hover:opacity-75 md:inline-flex">
       <Link to="/" className="flex items-center space-x-2">
@@ -88,8 +88,10 @@ const Header = ({ title, location }) => (
             type="button"
             className={`flex h-12 items-center justify-center font-medium lowercase tracking-wider transition ${
               location === link.title
-                ? 'text-dark dark:text-white'
-                : 'text-dark/50 hover:text-dark dark:text-white/50 dark:hover:text-white'
+                ? 'font-bold text-gray-700 dark:text-white'
+                : hasBackground
+                ? 'text-white'
+                : 'text-gray-400 hover:text-gray-700 dark:text-white/50 dark:hover:text-white'
             }`}
           >
             <span className="flex items-center justify-center">

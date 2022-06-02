@@ -11,6 +11,7 @@ import {
   JoaoImage,
   LeonorImage,
 } from '../images/profile'
+import '../styles/utils.css'
 
 const Team = () => {
   const team = [
@@ -26,17 +27,27 @@ const Team = () => {
   ]
 
   return (
-    <div className="grid grid-cols-2 items-center gap-6 lg:grid-cols-3 xl:grid-cols-5">
+    <div className="grid grid-cols-2 items-center gap-4 lg:grid-cols-3 xl:grid-cols-3 xl:gap-6 2xl:grid-cols-5">
       {team.map((member, memberIdx) => (
-        <div className="flex flex-col items-center justify-center space-y-2 rounded bg-lightest px-4 py-8 dark:bg-lightest/5">
-          <img alt={member.name} src={`${member.image}`} className="h-32 w-32 rounded-full object-cover shadow" />
-          <p className="text-xl capitalize tracking-tight">{member.name}</p>
-          <div className="flex items-center justify-center space-x-2">
-            <a href={`https://github.com/${member.github}`} className="transition hover:opacity-80">
-              <GithubIcon className="h-6 w-6" />
+        <div
+          key={`team-member-${memberIdx}`}
+          className="flex flex-col items-center justify-center space-y-2 rounded bg-lightest px-2 py-4 dark:bg-lightest/5 xl:py-6 xl:px-4"
+        >
+          <img
+            alt={member.name}
+            src={`${member.image}`}
+            className="h-24 w-24 rounded-full object-cover shadow xl:h-32 xl:w-32"
+          />
+          <p className="text-sm capitalize tracking-tight xl:text-xl">{member.name}</p>
+          <div className="flex items-center justify-center space-x-3">
+            <a href={`https://github.com/${member.github}`} className="github">
+              <GithubIcon className="h-6 w-6 xl:h-8 xl:w-8" />
             </a>
-            <a href={`https://www.linkedin.com/in/${member.linkedin}`} className="transition hover:opacity-80">
-              <LinkedinIcon className="h-6 w-6" />
+            <a
+              href={`https://www.linkedin.com/in/${member.linkedin}`}
+              className="linkedin"
+            >
+              <LinkedinIcon className="h-6 w-6 xl:h-8 xl:w-8" />
             </a>
           </div>
         </div>
