@@ -17,7 +17,7 @@ const icon = '../images/icon.png'
 
 export const Navbar = ({ title, location, hasBackground }: Props) => {
   return (
-    <Disclosure as="nav" className={classNames('navbar', hasBackground ? '' : 'fixed bg-ice/50 dark:bg-navy/50')}>
+    <Disclosure as="nav" className={classNames('navbar', hasBackground ? '' : 'bg-ice/50 dark:bg-navy/50')}>
       {({ open }) => {
         return (
           <>

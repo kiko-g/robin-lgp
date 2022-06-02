@@ -28,11 +28,13 @@ const Layout = ({ children, location, background, liquid }: Props) => {
       <Navbar hasBackground={background} location={location} title={data.site.siteMetadata?.title} />
       {background && <Background globs={false} />}
       {background ? (
-        <div className="z-10 my-auto">{children}</div>
+        <div className="min-h-adjusted z-10 my-auto">{children}</div>
       ) : (
         <div
           className={classNames(
-            liquid ? 'container z-10 mx-auto my-auto max-w-8xl' : 'container z-10 mx-auto my-auto max-w-7xl'
+            liquid
+              ? 'min-h-adjusted container z-10 mx-auto my-auto flex max-w-8xl flex-col items-center justify-center'
+              : 'min-h-adjusted container z-10 mx-auto my-auto flex max-w-7xl flex-col items-center justify-center'
           )}
         >
           {children}
