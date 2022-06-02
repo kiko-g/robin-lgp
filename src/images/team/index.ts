@@ -1,21 +1,8 @@
-import FranciscoImage from './logo.png'
-import NunoImage from './logo.png'
-import TiagoImage from './logo.png'
-import DanielGImage from './logo.png'
-import DanielSImage from './logo.png'
-import InesImage from './logo.png'
-import MargaridaImage from './logo.png'
-import JoaoImage from './logo.png'
-import LeonorImage from './logo.png'
+import TeamAImage from './a.jpg'
+import TeamBImage from './b.jpg'
+import TeamCImage from './c.jpg'
+import TeamDImage from './d.jpg'
+import TeamEImage from './e.jpg'
+import TeamFImage from './f.jpg'
 
-export {
-  FranciscoImage,
-  NunoImage,
-  TiagoImage,
-  DanielGImage,
-  DanielSImage,
-  InesImage,
-  MargaridaImage,
-  JoaoImage,
-  LeonorImage,
-}
+export { TeamAImage, TeamBImage, TeamCImage, TeamDImage, TeamEImage, TeamFImage }

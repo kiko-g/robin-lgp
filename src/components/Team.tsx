@@ -10,7 +10,7 @@ import {
   MargaridaImage,
   JoaoImage,
   LeonorImage,
-} from '../images/team'
+} from '../images/profile'
 
 const Team = () => {
   const team = [

@@ -1,14 +1,15 @@
 import * as React from 'react'
 import Seo from '../components/Seo'
-import { Layout } from '../layout/Layout'
-import { ComingSoon } from '../layout/ComingSoon'
-import Team from '../components/Team'
+import Hero from '../components/Hero'
+import Layout from '../layout'
 
-const IndexPage = () => (
-  <Layout location="Home" background={false}>
-    <Seo title="Home" />
-    <Team />
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Layout location="Home" background={true}>
+      <Seo title="Home" />
+      <Hero />
+    </Layout>
+  )
+}
 
 export default IndexPage

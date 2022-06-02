@@ -1,7 +1,7 @@
 import React from 'react'
 import Seo from '../components/Seo'
 import { graphql } from 'gatsby'
-import { Layout } from '../layout/Layout'
+import Layout from '../layout'
 import { BlogpostCard } from '../components/BlogpostCard'
 import '../styles/blog.css'
 

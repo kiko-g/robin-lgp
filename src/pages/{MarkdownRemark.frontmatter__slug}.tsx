@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Layout } from '../layout/Layout'
+import Layout from '../layout'
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 

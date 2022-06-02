@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Seo from '../components/Seo'
-import { Layout } from '../layout/Layout'
+import Layout from '../layout'
 import { ComingSoon } from '../layout/ComingSoon'
 
 const ValuesPage = () => (

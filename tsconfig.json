@@ -1,5 +1,5 @@
 {
-  "include": ["./src/declaration.d.ts", "./src/**/*.ts", "./src/**/*d.ts"],
+  "include": ["./src/declaration.d.ts", "./src/**/*.ts", "./src/**/*d.ts", "src/components/CardFeature.tsx"],
   "exclude": [],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */

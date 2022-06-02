@@ -2,6 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fluid */
+.robin-gradient {
+  background: linear-gradient(to bottom right, theme('colors.primary'), theme('colors.secondary'));
+}
+
+.gradient {
+  background: linear-gradient(180deg, theme('colors.primary'), theme('colors.rose.900'), theme('colors.secondary'));
+}
+
+.flow {
+  animation: gradient 20s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Particles */
 .background-wrapper {
   @apply absolute top-0 z-0 h-full w-full overflow-hidden;
 }
@@ -25,15 +58,15 @@
 }
 
 .background-circles li:nth-child(odd) {
-  @apply bg-primary/50 dark:bg-white/10;
+  @apply bg-navy/25 dark:bg-white/10;
 }
 
 .background-circles li:nth-child(even) {
-  @apply bg-secondary/50 dark:bg-white/10;
+  @apply bg-navy/30 dark:bg-white/10;
 }
 
 .background-circles li:nth-child(3n) {
-  @apply bg-tertiary/50 dark:bg-white/10;
+  @apply bg-navy/40 dark:bg-white/10;
 }
 
 .background-circles li:nth-child(4n) {

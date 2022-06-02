@@ -18,7 +18,8 @@ module.exports = {
           `jetbrains mono`,
           `inter\:100,200,300,400,400i,500,600,700`,
           `rubik\:100,200,300,400,400i,500,600,700`,
-          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+          `montserrat\:100,200,300,400,400i,500,600,700`,
+          `source sans pro\:300,400,400i,500,600,700`, // you can also specify font weights and styles
         ],
         display: 'swap',
       },
