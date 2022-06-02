@@ -14,6 +14,7 @@ export const Footer = ({ siteTitle }: Props) => {
     { name: 'About', route: '/about' },
     { name: 'Blog', route: '/blog' },
     { name: 'Values', route: '/values' },
+    { name: 'Contacts', route: '/contacts' },
     { name: 'FAQ', route: '/faq' },
   ]
 

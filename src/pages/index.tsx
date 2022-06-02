@@ -15,13 +15,13 @@ const IndexPage = () => {
           Inspiring text about our products and solutions and how they facilitate interaction with complex software and
           technologies both for regular users and high tech companies. You know the standard. But better.
         </p>
-        <SeeMore route="about" />
+        <SeeMore text="Find out more about us" route="about" />
       </div>
 
       <div id="team" className="divider mx-4 space-y-6 py-16 xl:mx-24 xl:py-24">
         <h1 className="font-headings text-4xl font-semibold">Meet our team</h1>
         <Team />
-        <SeeMore route="contacts" />
+        <SeeMore text="Reach out" route="contacts" />
       </div>
     </Layout>
   )

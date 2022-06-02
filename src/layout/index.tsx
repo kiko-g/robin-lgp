@@ -28,7 +28,7 @@ const Layout = ({ children, location, background, liquid }: Props) => {
       <Navbar hasBackground={background} location={location} title={data.site.siteMetadata?.title} />
       {background && <Background globs={false} />}
       {background ? (
-        <div className="min-h-adjusted z-10 my-auto">{children}</div>
+        <div className="z-10 my-auto">{children}</div>
       ) : (
         <div
           className={classNames(
