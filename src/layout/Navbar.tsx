@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 import { Link } from 'gatsby'
 import { Disclosure } from '@headlessui/react'
 import { StaticImage } from 'gatsby-plugin-image'
@@ -16,7 +17,7 @@ const icon = '../images/icon.png'
 
 export const Navbar = ({ title, location, hasBackground }: Props) => {
   return (
-    <Disclosure as="nav" className="navbar">
+    <Disclosure as="nav" className={classNames('navbar', hasBackground ? '' : '')}>
       {({ open }) => {
         return (
           <>
@@ -77,7 +78,14 @@ const Header = ({ title, location, hasBackground }: Props) => (
           src={icon}
           className="robin-gradient z-20 inline-flex h-6 w-6 rounded-full transition dark:bg-darkest"
         />
-        <h2 className="text-xs font-bold tracking-tighter duration-150 lg:text-base">{title}</h2>
+        <h2
+          className={classNames(
+            'text-xs font-bold tracking-tighter duration-150 lg:text-base',
+            hasBackground ? 'text-white' : 'text-gray-700 dark:text-white'
+          )}
+        >
+          {title}
+        </h2>
       </Link>
     </div>
 
@@ -86,13 +94,14 @@ const Header = ({ title, location, hasBackground }: Props) => (
         <Link to={link.location} key={`nav-${index}`} className="relative py-1">
           <button
             type="button"
-            className={`flex h-12 items-center justify-center font-medium lowercase tracking-wider transition ${
+            className={classNames(
+              'flex h-12 items-center justify-center font-medium lowercase tracking-wider transition',
               location === link.title
-                ? 'font-bold text-gray-700 dark:text-white'
+                ? classNames('font-bold', hasBackground ? 'text-white' : 'text-gray-700 dark:text-white')
                 : hasBackground
-                ? 'text-white'
-                : 'text-gray-400 hover:text-gray-700 dark:text-white/50 dark:hover:text-white'
-            }`}
+                ? 'text-white/50 hover:text-white'
+                : 'text-gray-700/50 hover:text-gray-700 dark:text-white/50 dark:hover:text-white'
+            )}
           >
             <span className="flex items-center justify-center">
               {link.icon}

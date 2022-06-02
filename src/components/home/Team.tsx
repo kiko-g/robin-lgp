@@ -1,5 +1,5 @@
 import React from 'react'
-import { GithubIcon, LinkedinIcon } from './svgs'
+import { GithubIcon, LinkedinIcon } from '../svgs'
 import {
   FranciscoImage,
   NunoImage,
@@ -10,8 +10,8 @@ import {
   MargaridaImage,
   JoaoImage,
   LeonorImage,
-} from '../images/profile'
-import '../styles/utils.css'
+} from '../../images/profile'
+import '../../styles/utils.css'
 
 const Team = () => {
   const team = [
@@ -43,10 +43,7 @@ const Team = () => {
             <a href={`https://github.com/${member.github}`} className="github">
               <GithubIcon className="h-6 w-6 xl:h-8 xl:w-8" />
             </a>
-            <a
-              href={`https://www.linkedin.com/in/${member.linkedin}`}
-              className="linkedin"
-            >
+            <a href={`https://www.linkedin.com/in/${member.linkedin}`} className="linkedin">
               <LinkedinIcon className="h-6 w-6 xl:h-8 xl:w-8" />
             </a>
           </div>

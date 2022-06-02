@@ -20,6 +20,10 @@ code {
   min-height: calc(100vh - 3.5rem);
 }
 
+.divider {
+  @apply border-t-2 border-navy dark:border-ice;
+}
+
 /* Layout */
 .layout {
   @apply flex min-h-screen flex-col overflow-hidden bg-ice font-prose font-medium text-gray-800 opacity-[99%] dark:bg-navy dark:text-white;
@@ -27,7 +31,7 @@ code {
 
 /* Navbar */
 .navbar {
-  @apply sticky top-0 z-20 space-x-4 px-3 py-2 bg-ice/40 dark:bg-transparent text-gray-800 dark:text-white md:py-0 md:px-3;
+  @apply z-20 w-full space-x-4 bg-ice/0 px-3 py-2 text-gray-800 dark:bg-navy/0 dark:text-white md:py-0 md:px-3;
 }
 
 .hamburger {

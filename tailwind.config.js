@@ -11,9 +11,11 @@ module.exports = {
         tertiary: '#ffec00', // bright yellow
         navy: '#18222e', // dark background (blueish)
         ice: '#eaeaf4', // light background (whiteish)
+        darkish: '#333640',
         dark: '#242731',
         darker: '#1e2028',
         darkest: '#1a1c23',
+        lightish: '#ebedf0',
         light: '#f2f4f7',
         lighter: '#f7f7f7',
         lightest: '#fcfcfc',
