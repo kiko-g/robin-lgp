@@ -45,7 +45,8 @@ const Team = () => {
   ]
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 lg:grid-cols-3 xl:grid-cols-3 xl:gap-8 2xl:grid-cols-5">
+    <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-2 lg:grid-cols-3 
+    xl:grid-cols-3 xl:gap-6 2xl:grid-cols-5">
       {team.map((member, memberIdx) => (
         <div
           key={`team-member-${memberIdx}`}
@@ -56,8 +57,8 @@ const Team = () => {
             src={`${member.image}`}
             className="mb-4 h-24 w-24 rounded-full object-cover shadow xl:h-32 xl:w-32"
           />
-          <p className="text-base font-semibold capitalize text-center tracking-tight xl:text-xl">{member.name}</p>
-          <p className="text-sm font-normal tracking-tight text-center text-gray-400 dark:text-gray-300 xl:text-sm">
+          <p className="text-center text-base font-semibold capitalize tracking-tight xl:text-xl">{member.name}</p>
+          <p className="text-center text-sm font-normal tracking-tight text-gray-400 dark:text-gray-300 xl:text-sm">
             {member.role}
           </p>
           <div className="mt-4 flex items-center justify-center space-x-3">

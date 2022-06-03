@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { daysDifference } from '../utils'
+import { daysDifference } from '../../utils'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 export const BlogpostCard = ({ post }) => {

@@ -1,6 +1,6 @@
 /* @@@ Blogpage */
 .blog {
-  @apply container mx-auto flex-1 flex-col justify-between space-y-6 px-4 py-4 xl:px-4 2xl:px-0;
+  @apply container mx-auto flex-1 flex-col justify-between space-y-6 px-4 py-4 xl:px-4 2xl:px-4;
 }
 
 .blog header > h2 {

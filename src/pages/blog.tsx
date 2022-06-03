@@ -2,7 +2,7 @@ import * as React from 'react'
 import Seo from '../components/Seo'
 import { graphql } from 'gatsby'
 import Layout from '../layout'
-import { BlogpostCard } from '../components/BlogpostCard'
+import { BlogpostCard } from '../components/blog/BlogpostCard'
 import '../styles/blog.css'
 
 // prettier-ignore
