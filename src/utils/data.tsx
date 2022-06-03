@@ -5,7 +5,6 @@ const navigation = [
   { title: 'Home', location: '/', icon: <HomeIcon className="mr-1.5 h-4 w-4" /> },
   { title: 'About', location: '/about', icon: <FingerPrintIcon className="mr-1.5 mt-0.5 h-4 w-4" /> },
   { title: 'Blog', location: '/blog', icon: <NewspaperIcon className="mr-1.5 h-4 w-4" /> },
-  { title: 'Values', location: '/values', icon: <AnnotationIcon className="mr-1.5 mt-0.5 h-4 w-4" /> },
   { title: 'Contacts', location: '/contacts', icon: <PhoneOutgoingIcon className="mr-1.5 mt-0.5 h-4 w-4" /> },
 ]
 
