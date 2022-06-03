@@ -9,6 +9,10 @@ html {
   @apply scroll-smooth;
 }
 
+h1 {
+  @apply font-headings;
+}
+
 code {
   @apply rounded-md px-1 font-code text-pink-600;
 }
