@@ -34,7 +34,7 @@ const Layout = ({ children, location, background, liquid }: Props) => {
           className={classNames(
             liquid
               ? 'min-h-adjusted container z-10 mx-auto my-auto flex max-w-8xl flex-col items-center justify-center'
-              : 'min-h-adjusted container z-10 mx-auto my-auto flex max-w-7xl flex-col items-center justify-center'
+              : 'min-h-adjusted z-10 my-auto flex w-full flex-col items-center justify-center'
           )}
         >
           {children}

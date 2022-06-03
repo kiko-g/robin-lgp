@@ -9,10 +9,6 @@ html {
   @apply scroll-smooth;
 }
 
-h1 {
-  @apply font-headings;
-}
-
 code {
   @apply rounded-md px-1 font-code text-pink-600;
 }
@@ -48,7 +44,11 @@ code {
 }
 
 .min-h-adjusted {
-  min-height: calc(100vh - 3.5rem - 2rem);
+  min-height: calc(100vh - 3.5rem);
+}
+
+.min-h-adjusted-top {
+  min-height: calc(100vh - 3.5rem);
 }
 
 /* Gradient */
