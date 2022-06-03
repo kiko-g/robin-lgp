@@ -29,6 +29,13 @@ const AboutPage = () => (
           interface to decrease the communication involved in Human Computer Interaction
         </p>
       </div>
+
+      <div id="values" className="mx-4 flex flex-col items-center justify-center space-y-6 py-8 xl:mx-12 xl:py-16">
+        <h1 className="text-center font-headings text-5xl font-semibold">Our Values.</h1>
+        <p className="text-center text-lg font-normal xl:text-lg">
+          Values text.
+        </p>
+      </div>
     </div>
   </Layout>
 )
