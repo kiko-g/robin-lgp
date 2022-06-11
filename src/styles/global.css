@@ -60,6 +60,10 @@ code {
   background: linear-gradient(180deg, theme('colors.primary'), theme('colors.rose.900'), theme('colors.secondary'));
 }
 
+.dark .gradient {
+  background: linear-gradient(180deg, #344c66, #284260, #203753);
+}
+
 .flow {
   animation: gradient 20s ease infinite;
   background-size: 400% 400%;
