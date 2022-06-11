@@ -1,12 +1,12 @@
 import FranciscoImage from './francisco.jpg'
-import NunoImage from './francisco.jpg'
-import TiagoImage from './francisco.jpg'
-import DanielGImage from './francisco.jpg'
-import DanielSImage from './francisco.jpg'
-import InesImage from './francisco.jpg'
-import MargaridaImage from './francisco.jpg'
-import JoaoImage from './francisco.jpg'
-import LeonorImage from './francisco.jpg'
+import NunoImage from './nuno.jpg'
+import TiagoImage from './tiago.jpg'
+import DanielGImage from './daniel-s.jpg'
+import DanielSImage from './daniel-s.jpg'
+import InesImage from './ines.jpg'
+import MargaridaImage from './margarida.jpg'
+import JoaoImage from './joao.jpg'
+import LeonorImage from './leonor.jpg'
 
 export {
   FranciscoImage,

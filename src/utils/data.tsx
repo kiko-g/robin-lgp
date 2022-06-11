@@ -1,11 +1,21 @@
 import * as React from 'react'
 import { FingerPrintIcon, NewspaperIcon, AnnotationIcon, PhoneOutgoingIcon, HomeIcon } from '@heroicons/react/outline'
+import {
+  FranciscoImage,
+  NunoImage,
+  TiagoImage,
+  DanielGImage,
+  DanielSImage,
+  InesImage,
+  MargaridaImage,
+  JoaoImage,
+  LeonorImage,
+} from '../images/profile'
 
 const navigation = [
   { title: 'Home', location: '/', icon: <HomeIcon className="mr-1.5 h-4 w-4" /> },
   { title: 'About', location: '/about', icon: <FingerPrintIcon className="mr-1.5 mt-0.5 h-4 w-4" /> },
   { title: 'Blog', location: '/blog', icon: <NewspaperIcon className="mr-1.5 h-4 w-4" /> },
-  { title: 'Contacts', location: '/contacts', icon: <PhoneOutgoingIcon className="mr-1.5 mt-0.5 h-4 w-4" /> },
 ]
 
 const socials = [
@@ -45,4 +55,46 @@ const socials = [
   },
 ]
 
-export { navigation, socials }
+const team = [
+  {
+    name: 'Margarida Cosme',
+    role: 'CEO, Project Owner',
+    image: MargaridaImage,
+    github: 'margaridacosme',
+    linkedin: 'margarida-cosme-61040a13b',
+  },
+  {
+    name: 'Francisco Gonçalves',
+    role: 'CTO, Scrum Master',
+    image: FranciscoImage,
+    github: 'kiko-g',
+    linkedin: 'kikogoncalves',
+  },
+  { name: 'Tiago Araújo', role: 'Scope Manager', image: TiagoImage, github: 'Guito14', linkedin: '' },
+  {
+    name: 'Inês Silva',
+    role: 'Image and Marketing Director',
+    image: InesImage,
+    github: 'reluzita',
+    linkedin: 'inesosilva',
+  },
+  {
+    name: 'Daniel Gonçalves',
+    role: 'Human Resources Director',
+    image: DanielGImage,
+    github: 'Esdeath-GK',
+    linkedin: '',
+  },
+  { name: 'Nuno Santos', role: 'Test Manager', image: NunoImage, github: 'nunosanto', linkedin: '' },
+  { name: 'Daniel Silva', role: 'Quality Manager', image: DanielSImage, github: 'DanielGSilva', linkedin: '' },
+  {
+    name: 'João Cardoso',
+    role: 'Risk Manager',
+    image: JoaoImage,
+    github: 'joaoalc',
+    linkedin: 'joão-cardoso-aa119a225',
+  },
+  { name: 'Leonor Gomes', role: 'CFO', image: LeonorImage, github: 'leonormgomes', linkedin: 'leonormgomes' },
+]
+
+export { navigation, socials, team }

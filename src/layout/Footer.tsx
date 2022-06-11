@@ -13,19 +13,16 @@ export const Footer = ({ siteTitle }: Props) => {
     { name: 'Home', route: '/' },
     { name: 'About', route: '/about' },
     { name: 'Blog', route: '/blog' },
-    { name: 'Contacts', route: '/contacts' },
     { name: 'FAQ', route: '/faq' },
   ]
 
   return (
     <footer
-      className="z-20 mt-8 flex items-center justify-between bg-navy p-2 text-xs 
-      text-gray-200 hover:text-white dark:bg-ice dark:text-gray-500 dark:hover:text-gray-700 md:p-3 md:text-sm"
+      className="z-20 mt-8 flex items-center justify-between bg-navy p-2 text-xs text-gray-200 hover:text-white md:p-3 md:text-sm"
     >
       <div className="mx-auto max-w-5xl space-y-8 px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center text-gray-400">
-          <img className="hidden h-16 w-auto object-cover dark:block" src={LogoLight} alt="robin" />
-          <img className="block h-16 w-auto object-cover dark:hidden" src={LogoDark} alt="robin" />
+          <img className="h-16 w-auto object-cover" src={LogoDark} alt="robin" />
         </div>
 
         <div className="mx-auto mt-6 max-w-md space-y-3 text-center leading-relaxed">

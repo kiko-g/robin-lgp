@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Seo from '../components/Seo'
 import Layout from '../layout'
-import { Hero, Team, SeeMore } from '../components/home'
+import { Hero, Squad, Team, SeeMore } from '../components/home'
 
 const IndexPage = () => {
   return (
@@ -18,8 +18,8 @@ const IndexPage = () => {
         <SeeMore text="Find out more about us" route="about" />
       </div>
 
-      <div id="team" className="divider mx-4 space-y-6 py-16 xl:mx-24 xl:py-24">
-        <h1 className="font-headings text-4xl font-semibold">Meet our team</h1>
+      <div id="team" className="mx-4 space-y-16 py-8 xl:mx-24 xl:py-12">
+        <Squad />
         <Team />
       </div>
     </Layout>
