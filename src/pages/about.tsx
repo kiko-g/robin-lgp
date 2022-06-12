@@ -8,8 +8,7 @@ const AboutPage = () => (
     <Seo title="About" />
 
     <div className="min-h-adjusted z-20 mx-auto flex h-full max-w-4xl flex-col items-center justify-center px-4 font-headings">
-      <img className="hidden h-16 w-auto object-cover dark:block lg:h-32" src={LogoLight} alt="robin" />
-      <img className="block h-16 w-auto object-cover dark:hidden lg:h-32" src={LogoDark} alt="robin" />
+      <img className="h-16 w-auto object-cover lg:h-32" src={LogoDark} alt="robin" />
     </div>
 
     <div className="container mx-auto max-w-7xl">

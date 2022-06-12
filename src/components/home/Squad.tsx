@@ -3,7 +3,7 @@ import { TeamBImage } from '../../images/team'
 
 const Squad = () => {
   return (
-    <div className="gradient rounded-3xl overflow-hidden text-white lg:grid lg:grid-cols-2 lg:items-center">
+    <div className="robin-gradient rounded-3xl overflow-hidden text-white lg:grid lg:grid-cols-2 lg:items-center">
       <div className="p-12 text-center sm:p-16 lg:p-24 lg:text-left">
         <div className="mx-auto max-w-lg lg:ml-0 lg:pt-12">
           <p className="text-3xl font-bold sm:text-4xl">A team built for success.</p>
