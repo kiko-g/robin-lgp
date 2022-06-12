@@ -1,7 +1,8 @@
 import * as React from 'react'
 import Seo from '../components/Seo'
 import Layout from '../layout'
-import { Hero, Squad, Team, SeeMore } from '../components/home'
+import SeeMore from '../components/SeeMore'
+import { Hero, Squad, Team } from '../components/home'
 
 const IndexPage = () => {
   return (
