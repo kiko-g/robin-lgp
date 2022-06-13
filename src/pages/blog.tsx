@@ -13,11 +13,10 @@ const BlogPage = ({ data: { allMarkdownRemark: { edges }, }, }) => {
       <main className="blog">
         <header>
           <h2>Blog</h2>
-          <p>
-            Welcome to my blog! This is where you'll find posts about things I want to talk about. Most posts will be
-            about software development, engineering and programming, but occasionally you might find some stuff related
-            to hobbies of mine and maybe some other random jibber-jabber!
-          </p>
+          <div>
+            Welcome to our blog! This is where you'll find a little bit more about us. 
+            We expect to shares some details and insights on the day to day life at Robin and a closer look at the development of our products.
+          </div>
         </header>
 
         <article>

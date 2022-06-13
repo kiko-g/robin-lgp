@@ -1,0 +1,35 @@
+.showcase {
+  @apply relative rounded-none lg:flex lg:rounded-xl;
+}
+
+.showcase > .showcase-grid {
+  @apply grid grid-cols-1 gap-8 lg:grid-cols-2;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner {
+  @apply flex flex-col space-y-3 rounded-xl bg-lightest p-4 shadow-xl dark:bg-light/5;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner > h3 {
+  @apply text-center font-headings text-2xl font-semibold;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner > video {
+  @apply rounded;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner > ul {
+  @apply space-y-3 text-sm font-normal xl:text-lg;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner > ul > li {
+  @apply border-l-4 bg-gray-100 px-4 py-2 dark:bg-white/5;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner > ul > li.con {
+  @apply border-rose-700;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner > ul > li.pro {
+  @apply border-teal-600;
+}

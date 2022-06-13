@@ -16,7 +16,7 @@ const IndexPage = () => {
           Inspiring text about our products and solutions and how they facilitate interaction with complex software and
           technologies both for regular users and high tech companies. You know the standard. But better.
         </p>
-        <SeeMore text="Find out more about us" route="about" />
+        <SeeMore text="Find out more about our products" route="about#showcase" />
       </div>
 
       <div id="team" className="mx-4 space-y-16 py-8 xl:mx-24 xl:py-12">
