@@ -8,11 +8,11 @@ const AboutPage = () => (
   <Layout location="About" background>
     <Seo title="About" />
 
-    <div className="min-h-adjusted z-20 mx-auto flex h-full max-w-4xl flex-col items-center justify-center px-4 font-headings">
+    <div id="hello" className="min-h-adjusted z-20 mx-auto flex h-full max-w-4xl flex-col items-center justify-center px-4 font-headings">
       <img className="h-16 w-auto object-cover lg:h-32" src={LogoDark} alt="robin" />
     </div>
 
-    <div className="container mx-auto max-w-8xl space-y-8 px-4 py-12 lg:space-y-16 lg:px-8 lg:py-24">
+    <div id="content" className="container mx-auto max-w-8xl space-y-8 px-4 py-12 lg:space-y-16 lg:px-8 lg:py-24">
       <ShowcaseMES id="showcase" />
       <Story id="story" />
       <Purpose id="purpose" />
