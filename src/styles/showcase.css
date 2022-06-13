@@ -1,17 +1,25 @@
 .showcase {
-  @apply relative rounded-none lg:flex lg:rounded-xl;
+  @apply relative flex flex-col rounded-none lg:rounded-xl;
+}
+
+.showcase > h2 {
+  @apply text-xl font-semibold text-gray-700 dark:text-white lg:text-4xl;
+}
+
+.showcase > h4 {
+  @apply text-sm text-gray-400 dark:text-white xl:text-lg;
 }
 
 .showcase > .showcase-grid {
-  @apply grid grid-cols-1 gap-8 lg:grid-cols-2;
+  @apply mt-4 grid grid-cols-1 gap-6 lg:grid-cols-2;
 }
 
 .showcase > .showcase-grid > .showcase-grid-inner {
-  @apply flex flex-col space-y-3 rounded-xl bg-lightest p-4 shadow-xl dark:bg-light/5;
+  @apply flex flex-col space-y-4 rounded-xl bg-lightest p-5 shadow-xl dark:bg-light/5;
 }
 
 .showcase > .showcase-grid > .showcase-grid-inner > h3 {
-  @apply text-center font-headings text-2xl font-semibold;
+  @apply rounded border-2 bg-gray-100 py-2 text-center font-headings text-2xl font-semibold tracking-tighter dark:bg-white/5;
 }
 
 .showcase > .showcase-grid > .showcase-grid-inner > video {
@@ -19,17 +27,25 @@
 }
 
 .showcase > .showcase-grid > .showcase-grid-inner > ul {
-  @apply space-y-3 text-sm font-normal xl:text-lg;
+  @apply space-y-3 text-sm font-normal xl:text-base;
 }
 
 .showcase > .showcase-grid > .showcase-grid-inner > ul > li {
-  @apply border-l-4 bg-gray-100 px-4 py-2 dark:bg-white/5;
+  @apply rounded border-l-8 bg-gray-100 px-4 py-2 dark:bg-white/5;
 }
 
 .showcase > .showcase-grid > .showcase-grid-inner > ul > li.con {
-  @apply border-rose-700;
+  @apply border-rose-700 dark:border-rose-500;
 }
 
 .showcase > .showcase-grid > .showcase-grid-inner > ul > li.pro {
-  @apply border-teal-600;
+  @apply border-teal-600 dark:border-teal-400;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner > ul > li.con > strong {
+  @apply text-rose-700 dark:text-rose-500;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner > ul > li.pro > strong {
+  @apply text-teal-700 dark:text-teal-400;
 }

@@ -8,6 +8,18 @@ type Props = {
 
 const ShowcaseMES = ({ id }: Props) => (
   <section id={id} className="showcase">
+    <h2>Our first product.</h2>
+    <h4>
+      A virtual assistant for <strong>MES</strong>, a{' '}
+      <a
+        className="text-[#00558c] transition hover:underline hover:opacity-80"
+        href="https://www.criticalmanufacturing.com/"
+        target="_blank"
+      >
+        Critical Manufacturing
+      </a>{' '}
+      product.
+    </h4>
     <div className="showcase-grid">
       <div className="showcase-grid-inner">
         <h3>MES Without Robin</h3>
