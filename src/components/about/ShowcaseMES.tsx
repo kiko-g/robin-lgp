@@ -22,7 +22,12 @@ const ShowcaseMES = ({ id }: Props) => (
     </h4>
     <div className="showcase-grid">
       <div className="showcase-grid-inner">
-        <h3>MES Without Robin</h3>
+        <header>
+          <h3>
+            MES <strong>Without</strong> Robin
+          </h3>
+          <span className="con" />
+        </header>
         <video controls>
           <source src={MESWithoutRobin} type="video/mp4" />
         </video>
@@ -35,7 +40,12 @@ const ShowcaseMES = ({ id }: Props) => (
         </ul>
       </div>
       <div className="showcase-grid-inner">
-        <h3>MES With Robin</h3>
+        <header>
+          <h3>
+            MES <strong>With</strong> Robin
+          </h3>
+          <span className="pro" />
+        </header>
         <video controls>
           <source src={MESWithRobin} type="video/mp4" />
         </video>

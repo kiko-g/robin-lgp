@@ -6,8 +6,8 @@ type Props = {
 }
 
 const Purpose = ({ id }: Props) => (
-  <section id={id} className="relative overflow-hidden rounded-none shadow lg:flex lg:rounded-xl">
-    <div className="order-2 w-full rounded-none bg-light p-4 text-center dark:bg-white/5 sm:p-8 lg:order-2 lg:w-1/2 lg:rounded-r-xl lg:p-12 lg:text-left">
+  <section id={id} className="relative overflow-hidden rounded shadow lg:flex lg:rounded-xl">
+    <div className="order-2 w-full rounded-none bg-lighter p-4 text-center dark:bg-white/5 sm:p-8 lg:order-2 lg:w-1/2 lg:rounded-r-xl lg:p-12 lg:text-left">
       <div className="mx-auto max-w-xl space-y-4 lg:ml-0">
         <p className="mt-2 text-2xl font-bold sm:text-3xl">Our Purpose.</p>
         <p className="text-sm font-normal lg:mt-4 lg:text-base">
@@ -22,7 +22,7 @@ const Purpose = ({ id }: Props) => (
       </div>
     </div>
 
-    <div className="relative order-1 h-64 w-full rounded bg-light dark:bg-white/5 sm:h-96 lg:order-1 lg:h-auto lg:w-1/2 lg:rounded-r-none lg:rounded-l-xl">
+    <div className="relative order-1 h-64 w-full rounded bg-lighter dark:bg-white/5 sm:h-96 lg:order-1 lg:h-auto lg:w-1/2 lg:rounded-r-none lg:rounded-l-xl">
       <img
         src={FEUPCampus}
         alt="FEUP Campus"

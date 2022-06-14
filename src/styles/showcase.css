@@ -1,5 +1,5 @@
 .showcase {
-  @apply relative flex flex-col rounded-none lg:rounded-xl;
+  @apply relative flex flex-col rounded bg-lighter p-8 shadow-xl dark:bg-white/5 lg:rounded-xl lg:p-12;
 }
 
 .showcase > h2 {
@@ -7,31 +7,47 @@
 }
 
 .showcase > h4 {
-  @apply text-sm text-gray-400 dark:text-white xl:text-lg;
+  @apply text-sm text-gray-500 dark:text-white xl:text-lg;
 }
 
 .showcase > .showcase-grid {
-  @apply mt-4 grid grid-cols-1 gap-6 lg:grid-cols-2;
+  @apply mt-4 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-6;
 }
 
 .showcase > .showcase-grid > .showcase-grid-inner {
-  @apply flex flex-col space-y-4 rounded-xl bg-lightest p-5 shadow-xl dark:bg-light/5;
+  @apply flex flex-col space-y-3 rounded-xl lg:space-y-5;
 }
 
-.showcase > .showcase-grid > .showcase-grid-inner > h3 {
-  @apply rounded border-2 bg-gray-100 py-2 text-center font-headings text-2xl font-semibold tracking-tighter dark:bg-white/5;
+.showcase > .showcase-grid > .showcase-grid-inner > header {
+  @apply flex flex-col;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner > header > h3 {
+  @apply rounded bg-white py-2 text-center font-headings text-2xl font-semibold text-gray-700 shadow dark:bg-white/5 dark:text-white;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner > header > span {
+  @apply h-[6px] w-full;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner > header > span.pro {
+  @apply rounded-b bg-teal-600 dark:bg-teal-400;
+}
+
+.showcase > .showcase-grid > .showcase-grid-inner > header > span.con {
+  @apply rounded-b bg-rose-700 dark:bg-rose-500;
 }
 
 .showcase > .showcase-grid > .showcase-grid-inner > video {
-  @apply rounded;
+  @apply rounded shadow;
 }
 
 .showcase > .showcase-grid > .showcase-grid-inner > ul {
-  @apply space-y-3 text-sm font-normal xl:text-base;
+  @apply space-y-2 text-sm font-normal lg:space-y-3 xl:text-base;
 }
 
 .showcase > .showcase-grid > .showcase-grid-inner > ul > li {
-  @apply rounded border-l-8 bg-gray-100 px-4 py-2 dark:bg-white/5;
+  @apply rounded border-l-8 bg-white px-4 py-2 shadow dark:bg-white/5;
 }
 
 .showcase > .showcase-grid > .showcase-grid-inner > ul > li.con {
